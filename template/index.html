@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swipe slider</title>
+    <link rel="stylesheet" href="../dist/swipe-slider.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Swipe images</h2>
+
+        <div class="swipe">
+            <img src="http://ms.bdimg.com/pacific/1581077465.jpg" alt="">
+            <img src="http://ms.bdimg.com/pacific/1409906552.png" alt="">
+            <img src="http://ms.bdimg.com/pacific/1409906553.png" alt="">
+            <img src="http://ms.bdimg.com/pacific/1409906554.png" alt="">
+            <img src="http://ms.bdimg.com/pacific/1581077465.jpg" alt="">
+            <img src="http://ms.bdimg.com/pacific/1409906552.png" alt="">
+        </div>
+
+    </div>
+
+    <script src="../dist/swipe-slider.min.js"></script>
+    <script>
+        const slider = tns({
+            container: '.swipe',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            edgePadding: 10,
+            mouseDrag: true,
+            loop: false,
+            gutter: 10,
+            controls: false,
+            nav: false
+        });
+    </script>
+
+</body>
+</html>
